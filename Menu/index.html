@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Café con Sentido - Menú Interactivo</title>
+<link rel="stylesheet" href="style.css">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <img src="imagenes/logo.jpg" alt="Café con Sentido" class="logo">
+    <h1>Café con Sentido</h1>
+    <p>Café • Música • Comida • Merch</p>
+</header>
+
+<nav>
+    <button onclick="showSection('bienvenida')">Inicio</button>
+    <button onclick="showSection('estacion espresso')">Estación Espresso</button>
+    <button onclick="showSection('matcha')">Matcha</button>
+    <button onclick="showSection('vibras heladas')">Vibras Heladas</button>
+    <button onclick="showSection('leche, miel y otras magias')">Leche, Miel y Otras Magias</button>
+    <button onclick="showSection('dulce y salado')">Dulce y Salado</button>
+    <button onclick="showSection('juegos')">Juegos de Mesa</button>
+    <button onclick="showSection('merch')">Nuestra Merch</button>
+</nav>
+
+<!-- Sección de Bienvenida -->
+<section id="bienvenida" class="active">
+    <div class="categoria" style="background-color:#315B43; color: rgb(255, 255, 255);">Bienvenidos a Café Con Sentido</div>
+    <div class="carousel">
+        <div class="carousel-item active">
+            <img src="imagenes/logo.jpg" alt="Foto 1">
+        </div>
+        <div class="carousel-item">
+            <video autoplay muted loop>
+                <source src="imagenes/video.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+        </div>
+    </div>
+    <div class="welcome-text">
+        <h3>Sobre Nosotros</h3>
+        <p>
+            Café con Sentido es un espacio donde disfrutamos del café, la música, y momentos únicos. Nuestro objetivo es crear un ambiente acogedor para compartir experiencias, descubrir nuevos sabores y ofrecer productos de calidad.
+        </p>
+    </div>
+</section>
+
+<!-- Sección Menú -->
+<section id="estacion espresso">
+    <div class="categoria" style="background-color:#F5B400; color: white;">Estación Espresso</div>
+    <div class="item">
+        <img src="imagenes/espresso.jpg" alt="Espresso">
+        <div class="info">
+            <h3>Espresso</h3>
+            <p>Café intenso preparado al momento.</p>
+            <p class="price">$30 MXN</p>
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="imagenes/espresso.jpg" alt="Espresso">
+        <div class="info">
+            <h3>Espresso</h3>
+            <p>Café intenso preparado al momento.</p>
+            <p class="price">$30 MXN</p>
+        </div>
+    </div>
+</section>
+
+<section id="matcha">
+    <div class="categoria" style="background-color:#315B43; color: white;">Matcha</div>
+    <div class="item">
+        <img src="imagenes/matcha.jpg" alt="Matcha Latte">
+        <div class="info">
+            <h3>Matcha Latte</h3>
+            <p>Té matcha japonés con leche al vapor.</p>
+            <p class="price">$55 MXN</p>
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="imagenes/matcha.jpg" alt="Matcha Latte">
+        <div class="info">
+            <h3>Matcha Latte</h3>
+            <p>Té matcha japonés con leche al vapor.</p>
+            <p class="price">$55 MXN</p>
+        </div>
+    </div>
+</section>
+
+<section id="vibras heladas">
+    <div class="categoria" style="background-color:#2d5db6; color: white;">Vibras Heladas</div>
+    <div class="item">
+        <img src="imagenes/matcha.jpg" alt="Matcha Latte">
+        <div class="info">
+            <h3>Matcha Latte</h3>
+            <p>Té matcha japonés con leche al vapor.</p>
+            <p class="price">$55 MXN</p>
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="imagenes/matcha.jpg" alt="Matcha Latte">
+        <div class="info">
+            <h3>Matcha Latte</h3>
+            <p>Té matcha japonés con leche al vapor.</p>
+            <p class="price">$55 MXN</p>
+        </div>
+    </div>
+</section>
+
+<section id="leche, miel y otras magias">
+    <div class="categoria" style="background-color:#E67E22; color: white;">Leche, miel y otras magias</div>
+    <div class="item">
+        <img src="imagenes/pastel.jpg" alt="Pastel de Chocolate">
+        <div class="info">
+            <h3>Pastel de Chocolate</h3>
+            <p>Bizcocho húmedo con cobertura de cacao.</p>
+            <p class="price">$45 MXN</p>
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="imagenes/pastel.jpg" alt="Pastel de Chocolate">
+        <div class="info">
+            <h3>Pastel de Chocolate</h3>
+            <p>Bizcocho húmedo con cobertura de cacao.</p>
+            <p class="price">$45 MXN</p>
+        </div>
+    </div>
+</section>
+
+<section id="dulce y salado">
+    <div class="categoria" style="background-color:#4b2606; color: white;">Dulce y Salado</div>
+    <div class="item">
+        <img src="imagenes/pastel.jpg" alt="Pastel de Chocolate">
+        <div class="info">
+            <h3>Pastel de Chocolate</h3>
+            <p>Bizcocho húmedo con cobertura de cacao.</p>
+            <p class="price">$45 MXN</p>
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="imagenes/pastel.jpg" alt="Pastel de Chocolate">
+        <div class="info">
+            <h3>Pastel de Chocolate</h3>
+            <p>Bizcocho húmedo con cobertura de cacao.</p>
+            <p class="price">$45 MXN</p>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Video -->
+<section id="juegos">
+    <div class="categoria" style="background-color:#ff7802; color: white;">Juegos de mesa</div>
+    <div class="item">
+        <img src="imagenes/uno.jpg" alt="Juegos de mesa">
+        <div class="info">
+            <h3>Uno</h3>
+            <p>El clasico juego para toda la familia y amigos, o no?.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Servicios -->
+<section id="merch">
+    <h2>Nuestra Merch</h2>
+    <div class="categoria" style="background-color:#dad715; color: white;">Nuestra Merch</div>
+    <div class="item">
+        <img src="imagenes/merch.png" alt="Merch Oficial">
+        <div class="info">
+            <h3>Merch Oficial</h3>
+            <p>Lleva un recuerdo único de Café con Sentido.</p>
+        </div>
+    </div>
+</section>
+
+<script>
+    const sectionColors = {
+    'bienvenida': '#315B43',
+    'estacion espresso': '#000000',
+    'matcha': '#315B43',
+    'vibras heladas': '#2d5db6',
+    'leche, miel y otras magias': '#E67E22',
+    'dulce y salado': '#4b2606',
+    'juegos': '#ff7802', 
+    'merch': '#dad715'
+};
+function showSection(id) {
+    document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+
+    // Cambiar color de botón activo
+    document.querySelectorAll('nav button').forEach(btn => btn.style.background = 'none');
+    const activeButton = Array.from(document.querySelectorAll('nav button'))
+                            .find(b => b.getAttribute('onclick').includes(`'${id}'`));
+    if(activeButton) activeButton.style.background = sectionColors[id];
+
+     // Cambiar color de encabezado y nav con fade
+    const header = document.querySelector('header');
+    const nav = document.querySelector('nav');
+    header.style.transition = 'background 0.5s ease';
+    nav.style.transition = 'background 0.5s ease';
+    header.style.background = sectionColors[id];
+}
+
+// Carrusel automático en sección de bienvenida
+window.onload = function() {
+    const items = document.querySelectorAll('#bienvenida .carousel-item');
+    let current = 0;
+
+    function nextItem() {
+        items[current].classList.remove('active');
+        current = (current + 1) % items.length;
+        items[current].classList.add('active');
+    }
+
+    setInterval(nextItem, 3500);
+}
+</script>
+
+</body>
+</html>
