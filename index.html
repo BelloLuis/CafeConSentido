@@ -169,13 +169,13 @@
 
 <!-- Sección Servicios -->
 <section id="merch">
-    <h2>Nuestra Merch</h2>
     <div class="categoria" style="background-color:#dad715; color: white;">Nuestra Merch</div>
     <div class="item">
         <img src="imagenes/merch.png" alt="Merch Oficial">
         <div class="info">
             <h3>Merch Oficial</h3>
             <p>Lleva un recuerdo único de Café con Sentido.</p>
+            <p class="price">$45 MXN</p>
         </div>
     </div>
 </section>
@@ -199,14 +199,26 @@ function showSection(id) {
     document.querySelectorAll('nav button').forEach(btn => btn.style.background = 'none');
     const activeButton = Array.from(document.querySelectorAll('nav button'))
                             .find(b => b.getAttribute('onclick').includes(`'${id}'`));
-    if(activeButton) activeButton.style.background = sectionColors[id];
+       if(activeButton) {
+        activeButton.style.background = sectionColors[id];
+
+        // 🔹 Centrar el botón activo en el menú
+        activeButton.scrollIntoView({
+            behavior: "smooth",
+            inline: "center",
+            block: "nearest"
+        });
+    }
 
      // Cambiar color de encabezado y nav con fade
     const header = document.querySelector('header');
     const nav = document.querySelector('nav');
+    const footer = document.querySelector('footer');
     header.style.transition = 'background 0.5s ease';
     nav.style.transition = 'background 0.5s ease';
     header.style.background = sectionColors[id];
+    footer.style.transition = 'background 0.5s ease';
+    footer.style.background = sectionColors[id];
 }
 
 // Carrusel automático en sección de bienvenida
@@ -225,4 +237,14 @@ window.onload = function() {
 </script>
 
 </body>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<footer>
+    <p>&copy; 2025 Luis Bello.</p>
+    <p>Quieres tu propio menu?, Dale clic</p>
+    <div class="socials">
+        <a href="https://www.instagram.com/luis_bellot?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+</footer>
 </html>
